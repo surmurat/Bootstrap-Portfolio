@@ -5,46 +5,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <title>About Me</title>
 </head>
 
 <body>
-    <header class="bg-light">
-        <nav class="navbar content-size content-center navbar-expand-lg navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand logo font-weight-bold text-white" href="#">Murat Surenler</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar content-size navbar-expand-lg navbar-expand-md navbar-light">
+            <a class="navbar-brand logo font-weight-bold text-dark" href="#">Murat Surenler</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" onclick="toggleFunction()" href="#about">About <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" onclick="toggleFunction()" href="#projects">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" onclick="toggleFunction()" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="toggleFunction()" href="#technologies">Technologies</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="parallax"></div>
+    <div style="height:1300px;font-size:15px;">
+        <div class="container m-5 mx-auto h-100">
+            <div class="row justify-content-md-center">                
+                <div class="col-sm">
+                    <div class="jumbotron jumbotron-fluid shadow-lg border border-dark" id="projects">
+                            <h1 class="text-center">Portfolio</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card shadow-lg" style="width: 18rem;">
+                                        <img src="./images/exoticmasserati.png" class="card-img-top"
+                                            alt="Exotic Masserati">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Exotic Masserati</h5>
+                                            <p class="card-text">Simple car rental/swap app. It allows users to list
+                                                their own luxury cars or rent someone else’s.Node.js, MySQL, Express.js
+                                                with handlebars, Passport.js</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="https://mighty-springs-82404.herokuapp.com/"
+                                                class="card-link">Demo</a>
+                                            <a href="https://github.com/surmurat/exoticMasserati"
+                                                class="git-ic mr-3 float-right" role="button"><i
+                                                    class="fab fa-lg fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card shadow-lg" style="width: 18rem;">
+                                        <img src="./images/scrapeapp.png" class="card-img-top" alt="Scrpe App">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Scrape</h5>
+                                            <p class="card-text">Scrape is a web app that lets users view and leave
+                                                comments on the latest news. Technologies I used are Node.js, Mongoose,
+                                                Express.js with hbs, axios, cheerio.</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="https://scrapemrt.herokuapp.com/" class="card-link">Demo</a>
+                                            <a href="https://github.com/surmurat/scrape" class="git-ic mr-3 float-right"
+                                                role="button"><i class="fab fa-lg fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card shadow-lg" style="width: 18rem;">
+                                        <img src="./images/do-what-it-says.png" class="card-img-top" alt="Liri App">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Liri App</h5>
+                                            <p class="card-text">Liri is a simple Node JS app it takes commands from
+                                                users to find concerts, getting information about a song and movie.</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="https://github.com/surmurat/liri-node-app"
+                                                class="git-ic mr-3t float-right" role="button"><i
+                                                    class="fab fa-lg fa-github"></i></a> </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="container m-5">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="card shadow-lg" style="width: 18rem;">
+                                        <img src="./images/triviagame.png" class="card-img-top"
+                                            alt="Exotic Masserati">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Trivia Game</h5>
+                                            <p class="card-text">Trivia Game is small version of who wants to be millionaire.Users will be given a question with multiple answers limited by 30 seconds to answer, since users choose the correct answer then they will proceed to next question.
+
+                                                    Technologies: Vanilla JavaScript, CSS and Bootstrap.</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="https://surmurat.github.io/TriviaGame/" class="card-link">Demo</a>
+                                            <a href="https://github.com/surmurat/TriviaGame" class="git-ic mr-3 float-right" role="button"><i class="fab fa-lg fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="card shadow-lg" style="width: 18rem;">
+                                        <img src="./images/usdemo.png" class="card-img-top" alt="Scrpe App">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Scrape</h5>
+                                            <p class="card-text">This web site provides U.S. demographic information by state, and also povides daily news feedback to users.
+
+                                                    Technologies:
+                                                    
+                                                    jQuery, CSS and Bootstrap.</p>
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="https://surmurat.github.io/first-project/" class="card-link">Demo</a>
+                                            <a href="https://github.com/surmurat/first-project" class="git-ic mr-3 float-right"
+                                                role="button"><i class="fab fa-lg fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="parallax2 mt-10"></div>
+    <div class="container" id="about">
         <div class="row justify-content-md-center">
             <div class="col-sm">
-                <div class="jumbotron box bg-light">
-                    <h1 class="display-4 text-success font-weight-bold">About Me</h1>
+                <div class="jumbotron box shadow-lg">
+                    <h1 class="display-4 text-center">About Me</h1>
                     <hr class="my-4" />
                     <p class="lead">
-                        <img src="./muratsurenler.jpg" class="float-left" style="margin-right:20px;" />
+                        <img src="./images/muratsurenler.jpg" class="float-left" style="margin-right:20px;" />
                         My name is Murat Surenler, and I am currently enrolled Coding Bootcamp at Rutgers University. I
                         have a bachelor's degree in business of administration and also associate degree in tourism and
-                        hospitality.<br/>My couple of last years I spent working in customers service field which is
+                        hospitality.<br />My couple of last years I spent working in customers service field which is
                         restaurant business.<br />
                         I am always interested in learning computer science but never knew where to start from , and
                         now I believe I am part of highly experienced professional organization that is Rutgers
@@ -54,19 +169,80 @@
             </div>
         </div>
     </div>
+    <div class="parallax3" id="technologies"></div>
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid  bg-light">
+            <div class="container">
+                <h1 class="text-center m-0">Technologies</h1>
+                <div class="row">
+                    <div class="col-sm">
+                            <i class="fab fa-js fa-10x"></i>                             
+                    </div>
+                    <div class="col-sm">
+                            <i class="fab fa-html5 fa-10x"></i>                       
 
-    <footer class="footer bg-secondary">
-        <div class="navbar content-size content-align fixed-bottom navbar-light bg-secondary text-center justify-content-center mx-auto p-0">
-           <p class="text-white">Copyright &copy; 2018</p>
+                    </div>
+                    <div class="col-sm">
+                            <i class="fab fa-node fa-10x"></i>
+                    </div>
+                    
+                    
+                    <div class="col-sm">
+                            <img src="./images/mongodb_1014592.png" height="160px" width="220px" alt="">
+                    </div>  
+                    <div class="col-sm">
+                            <img src="./images/mysql-icon.png" height="160px" width="220px" alt="">
+                    </div>                 
+                </div>
+                <div class="row">
+                        
+                        <div class="col-sm">
+                            <i class="fab fa-bootstrap fa-10x"></i>
+                        </div>
+                        <div class="col-sm">
+                                <i class="fab fa-react fa-10x"></i>
+                        </div>
+                        <div class="col-sm">
+                                <i class="fab fa-css3-alt fa-10x"></i>
+                        </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+    <br>
+    <br>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+        <footer class="page-footer font-small special-color-dark pt-4">
+        
+            <div class="container" id="#contact">
+                <a href="https://www.facebook.com/profile.php?id=100009172318516" class="fb-ic mr-3 justify-content-center"
+                    role="button"><i class="fab fa-lg fa-facebook-f"></i></a>
+        
+                <a href="https://www.linkedin.com/in/murat-s-16aaa9175/" class="li-ic mr-3" role="button"><i
+                        class="fab fa-lg fa-linkedin-in"></i></a>
+        
+                <a href="rutjer201808FSF2.slack.com" class="slack-ic mr-3" role="button"><i
+                        class="fab fa-lg fa-slack-hash"></i></a>
+        
+                <a href="https://github.com/surmurat" class="git-ic mr-3" role="button"><i class="fab fa-lg fa-github"></i></a>
+            </div>
+        
+            <div class="footer-copyright text-center py-3">©muratSurenler
+            </div>
+        </footer>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

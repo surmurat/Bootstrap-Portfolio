@@ -5,23 +5,23 @@ header{
     width: 100%;
     padding: 0px;
     border-bottom: 1px solid gray;
+    background-color:#CFD8DC;
+
     
     
 }
 footer{
-    border-top: 5px solid #4aaaa5;
+    border-top: 5px solid #424242;
     bottom: 0;
-    background-color:#091D42;
-    padding: 20px;
-    position: fixed;
+    background-color:#CFD8DC;
+    padding: 10px;    
     width: 100%;
     left: 0;
-    color: #9AB4CB;
+    text-align: center;
 }
 
 
 .logo{
-    background-color:#4aaaa5;
     padding: 14px;
     position:absolute;
 
@@ -38,20 +38,20 @@ footer{
 }
 
 div .image-wrapper{
-	float:left; /* important */
-    position:relative; /* important(so we can absolutely position the description div */
+	float:left; 
+    position:relative; 
     margin-left: 15px;
 }
 div .description{
-	position:absolute; /* absolute position (so we can position it where we want)*/
-	bottom:0px; /* position will be on bottom */
+	position:absolute; 
+	bottom:0px; 
 	left:0px;
 	width:100%;
-	/* styling bellow */
+	
 	background-color:black;
 	color:white;
-	opacity:0.6; /* transparency */
-    filter:alpha(opacity=60); /* IE transparency */
+	opacity:0.6; 
+    filter:alpha(opacity=60); 
     text-align:center;
 }
 p .description_content{
@@ -59,3 +59,52 @@ p .description_content{
 	margin:0px;
     font-size: 30px;
 }
+
+.parallax { 
+	background-image: url('./images/clean-commerical-office-space.png'); 
+	min-height: 400px; 
+	background-attachment: fixed; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+    background-size: cover; 
+    
+} 
+
+.parallax2 { 
+	background-image: url('./images/office.png'); 
+	min-height: 400px; 
+	background-attachment: fixed; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+    background-size: cover; 
+   
+} 
+
+.parallax3 { 
+	background-image: url('./images/keybord-220357.png'); 
+	min-height: 400px; 
+	background-attachment: fixed; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+    background-size: cover; 
+   
+} 
+
+.card {
+    background-color: #607D8B;
+}
+
+
+.card:hover {
+    position:relative;
+    bottom:-45px;
+    right:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+  }
+
+  .jumbotron {
+    background-color:#CFD8DC;
+  }
