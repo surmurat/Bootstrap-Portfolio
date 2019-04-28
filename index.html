@@ -5,238 +5,295 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <title>About Me</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.css"
+        integrity="sha384-CYaEEtxzTAPwgXImMFjvDG8NlVsVmTew5NzIxq4MbFYF+wIzEcbPmkEa4iWMqVN3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha384-kcNNzf7wI8//ZkNUaDd5JwxLoFaBgkj9Z4O4NwtuX9Lkmsz0HoITOxJsGkYxDuyG" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha384-8/AzSKHReNfZT4HGFTyRyJ1jXhhx/ZMnmX08Cy6TeaKWj0Vzho0AabG06C8mh02i" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
-    <header>
-        <nav class="navbar content-size navbar-expand-lg navbar-expand-md navbar-light">
-            <a class="navbar-brand logo font-weight-bold text-dark" href="#">Murat Surenler</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="toggleFunction()" href="#about">About <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="toggleFunction()" href="#projects">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="toggleFunction()" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="toggleFunction()" href="#technologies">Technologies</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="container-fluid">
-        <div class="parallax"></div>
-        <div id="projects" style="height:600px;font-size:15px;">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <div class="card shadow-lg" style="height: 25rem;">
-                                <img src="./images/exoticmasserati.png" class="card-img-top" alt="Exotic Masserati">
-                                <div class="card-body">
-                                    <h5 class="card-title">Exotic Masserati</h5>
-                                    <p class="card-text">Simple car rental/swap app. It allows users to list
-                                        their own luxury cars or rent someone else’s.Node.js, MySQL, Express.js
-                                        with handlebars, Passport.js</p>
-                                </div>
-                                <div class="card-body">
-                                    <a href="https://mighty-springs-82404.herokuapp.com/" class="card-link">Demo</a>
-                                    <a href="https://github.com/surmurat/exoticMasserati" class="git-ic mr-3 float-right"
-                                        role="button"><i class="fab fa-lg fa-github"></i></a>
-                                </div>
+
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <aside class="col-12 col-md-2 p-0 bg-dark fixed-top">
+                <nav
+                    class="navbar navbar-expand navbar-dark bg-dark shadow-none flex-md-column flex-row align-items-start py-2">
+                    <div class="collapse navbar-collapse align-items-start">
+                        <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 text-nowrap" href="#">Murat Surenler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="#about"><i class="far fa-address-card"></i> <span
+                                        class="d-none d-md-inline">About</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="#technologies"><i class="fas fa-chalkboard-teacher"></i>
+                                    <span class="d-none d-md-inline">Technologies</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="#portfolio"><i class="fas fa-project-diagram"></i> <span
+                                        class="d-none d-md-inline">Portfolio</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="#contact"><i class="fas fa-address-book"></i> <span
+                                        class="d-none d-md-inline">Contact</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+            <main class="col offset-md-2 bg-faded p-0">
+                <section id="home" class="bg-cover h-100"
+                    style="background-image: url('http://www.iamwire.com/wp-content/uploads/2017/09/writing-code33.jpg');">
+                    Selam
+                </section>
+
+                <section id="about" class="mb-5">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title">About <span>Me</span></h2>
+
+                                <p class="text">
+                                    Highly-dedicated, enthusiastic, sufficiently ambitious and certified individual who
+                                    can
+                                    utilize JavaScript,
+                                    React, Node.js, MongoDB, Front End skills and experience in designing,
+                                    developing, implementing and maintaining software applications according to client’
+                                    requirements.
+                                    I have solid team-working skills with the ability to produce effective results under
+                                    minimal
+                                    supervision.
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <img src="./assets/images/muratsurenler.jpg" class="rounded-circle" />
                             </div>
                         </div>
-                        <div class="col-sm">
-                            <div class="card shadow-lg">
-                                <img src="./images/scrapeapp.png" class="card-img-top" alt="Scrpe App">
-                                <div class="card-body">
-                                    <h5 class="card-title">Scrape</h5>
-                                    <p class="card-text">Scrape is a web app that lets users view and leave
+                    </div>
+                </section>
+
+                <section id="technologies" class="mb-5 mt-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title">Technolog<span>ies.</span></h2>
+                                <ul class="technologies">
+
+                                    <li>
+                                        <img src="./assets/images/html-5-logo.png" width="128" height="128" />
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/CSS_Logo.png" width="128" height="128" />
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/javascript.png" width="128" height="128" />
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/jquery.png" width="128" height="128" />
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/handlebars.png" width="128" height="128" />
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/mongodb.png" width="128" height="128" />
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/MySQL-logo-png.png" width="110" height="100" />
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/react.png" width="128" height="128" />
+                                    </li>
+
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="portfolio" class="mb-5 mt-5">
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="title">Portfo<span>lio.</span></h2>
+
+                            <div class="owl-carousel">
+                                <div class="item">
+                                    <div class="project-overlay-container">
+                                        <img src="./assets/images/scrapeapp.png" />
+                                        <div class="overlay">
+                                            <ul>
+                                                <li><a href="https://scrapemrt.herokuapp.com/" target="_blank">Demo</a>
+                                                </li>
+                                                <li><a href="https://github.com/surmurat/scrape" role="button"
+                                                        target="_blank"><i class="fab fa-lg fa-github"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="text">
+                                        Scrape is a web app that lets users view and leave
                                         comments on the latest news. Technologies I used are Node.js, Mongoose,
-                                        Express.js with hbs, axios, cheerio.</p>
+                                        Express.js with hbs, axios, cheerio.
+                                    </p>
                                 </div>
-                                <div class="card-body">
-                                    <a href="https://scrapemrt.herokuapp.com/" class="card-link">Demo</a>
-                                    <a href="https://github.com/surmurat/scrape" class="git-ic mr-3 float-right"
-                                        role="button"><i class="fab fa-lg fa-github"></i></a>
+                                <div class="item">
+                                    <div class="project-overlay-container">
+                                        <img src="./assets/images/triviagame.png" />
+                                        <div class="overlay">
+                                            <ul>
+                                                <li><a href="https://surmurat.github.io/TriviaGame/"
+                                                        target="_blank">Demo</a></li>
+                                                <li><a href="https://github.com/surmurat/TriviaGame" role="button"
+                                                        target="_blank"><i class="fab fa-lg fa-github"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="text">
+                                        Trivia Game is small version of who wants to be millionaire.Users
+                                        will be given a question with multiple answers limited by 30 seconds to answer.
+                                        Technologies: Vanilla JavaScript, CSS and Bootstrap.
+                                    </p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card shadow-lg">
-                                <img src="./images/do-what-it-says.png" class="card-img-top" alt="Liri App">
-                                <div class="card-body">
-                                    <h5 class="card-title">Liri App</h5>
-                                    <p class="card-text">Liri is a simple Node JS app it takes commands from
-                                        users to find concerts, getting information about a song and movie.</p>
+                                <div class="item">
+                                    <div class="project-overlay-container">
+                                        <img src="./assets/images/exoticmasserati.png" />
+                                        <div class="overlay">
+                                            <ul>
+                                                <li><a href="https://mighty-springs-82404.herokuapp.com/"
+                                                        target="_blank">Demo</a></li>
+                                                <li><a href="https://github.com/surmurat/exoticMasserati" role="button"
+                                                        target="_blank"><i class="fab fa-lg fa-github"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="text">
+                                        Simple car rental/swap app. It allows users to list their own
+                                        luxury cars or rent someone else’s.
+                                        Technologies: Node.js, MySQL, Express.js with handlebars, Passport.js
+                                    </p>
                                 </div>
-                                <div class="card-body">
-                                    <a href="https://github.com/surmurat/liri-node-app" class="git-ic mr-3t float-right"
-                                        role="button"><i class="fab fa-lg fa-github"></i></a> </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card shadow-lg">
-                                <img src="./images/triviagame.png" class="card-img-top" alt="Exotic Masserati">
-                                <div class="card-body">
-                                    <h5 class="card-title">Trivia Game</h5>
-                                    <p class="card-text">Trivia Game is small version of who wants to be millionaire.Users
-                                        will be given a question with multiple answers limited by 30 seconds to answer.            
-                                        Technologies: Vanilla JavaScript, CSS and Bootstrap.</p>
+                                <div class="item">
+                                    <div class="project-overlay-container">
+                                        <img src="./assets/images/usdemo.png" />
+                                        <div class="overlay">
+                                            <ul>
+                                                <li><a href="https://surmurat.github.io/first-project/"
+                                                        target="_blank">Demo</a></li>
+                                                <li><a href="https://github.com/surmurat/first-project" role="button"
+                                                        target="_blank"><i class="fab fa-lg fa-github"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="text">
+                                        This web site provides U.S. demographic information by state, and also povides
+                                        daily news feedback to users.
+                                        Technologies:jQuery, CSS and Bootstrap.
+                                    </p>
                                 </div>
-                                <div class="card-body">
-                                    <a href="https://surmurat.github.io/TriviaGame/" class="card-link">Demo</a>
-                                    <a href="https://github.com/surmurat/TriviaGame" class="git-ic mr-3 float-right"
-                                        role="button"><i class="fab fa-lg fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="card shadow-lg">
-                                <img src="./images/usdemo.png" class="card-img-top" alt="Scrpe App">
-                                <div class="card-body">
-                                    <h5 class="card-title">Scrape</h5>
-                                    <p class="card-text">This web site provides U.S. demographic information by state, and
-                                        also povides daily news feedback to users.
-            
+                                <div class="item">
+                                    <div class="project-overlay-container">
+                                        <img src="./assets/images/do-what-it-says.png" />
+                                        <div class="overlay">
+                                            <ul>
+                                                <li><a href="https://github.com/surmurat/liri-node-app" role="button"
+                                                        target="_blank"><i class="fab fa-lg fa-github"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="text">
+                                        Liri is a simple AI app. Liri takes commands from users to find concerts,
+                                        getting information about a song and movie.
+
                                         Technologies:
-            
-                                        jQuery, CSS and Bootstrap.</p>
-                                </div>
-                                <div class="card-body">
-                                    <a href="https://surmurat.github.io/first-project/" class="card-link">Demo</a>
-                                    <a href="https://github.com/surmurat/first-project" class="git-ic mr-3 float-right"
-                                        role="button"><i class="fab fa-lg fa-github"></i></a>
+
+                                        Node.js.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-            
                     </div>
-                </div>
+                </section>
 
-
-
+                <section id="contact" class="mt-5 mb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2 class="title">Contact <span>Me</span></h2>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-4 col-sm-6">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p class="icon-title"><i class="fas fa-envelope"></i> <br /> E-mail
+                                        </p>
+                                        <br />
+                                        <a href="mailto:surmat@gmail.com" class="text2 text-center">surmat@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-6">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p class="icon-title"><i class="fab fa-github"></i> <br /> Github
+                                        </p>
+                                        <br />
+                                        <a class="text2" href="https://github.com/surmurat">github.com/surmurat</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm-6">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p class="icon-title"><i class="fab fa-linkedin"></i> <br /> Linkedin
+                                        </p>
+                                        <br />
+                                        <a class="text2"
+                                            href="https://www.linkedin.com/in/murat-s-16aaa9175/">murat-s-16aaa9175</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-        <div class="parallax2 mt-10"></div>
-        <div class="container" id="about">
-            <div class="row justify-content-md-center">
-                <div class="col-sm">
-                    <div class="jumbotron box shadow-lg">
-                        <h1 class="display-4 text-center">About Me</h1>
-                        <hr class="my-4" />
-                        <p class="lead" style="height:200px">
-                            <img src="./images/muratsurenler.jpg" class="float-left" style="margin-right:20px;" />
-                            Highly-dedicated, enthusiastic, sufficiently ambitious and certified individual who can
-                            utilize JavaScript,
-                            React, Node.js, MongoDB, Front End skills and experience in designing,
-                            developing, implementing and maintaining software applications according to client’
-                            requirements.
-                            I have solid team-working skills with the ability to produce effective results under minimal
-                            supervision.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="parallax3" id="technologies"></div>
-        <div class="container-fluid">
-            <div class="jumbotron jumbotron-fluid  bg-light">
-                <div class="container">
-                    <h1 class="text-center m-0">Technologies</h1>
-                    <div class="row">
-                        <div class="col-sm">
-                            <i class="fab fa-js fa-10x"></i>
-                        </div>
-                        <div class="col-sm">
-                            <i class="fab fa-html5 fa-10x"></i>
-                        </div>
-                        <div class="col-sm">
-                            <img src="./images/handlebars-icon.png" height="160px" width="220px" alt="">
-                        </div>
-                        <div class="col-sm">
-                            <i class="fab fa-node fa-10x"></i>
-                        </div>
-
-                        <div class="col-sm">
-                            <img src="./images/mysql-icon.png" height="160px" width="220px" alt="">
-                        </div>
-
-
-
-
-                    </div>
-                    <div class="row">
-
-                        <div class="col-sm">
-                            <i class="fab fa-bootstrap fa-10x"></i>
-                        </div>
-                        <div class="col-sm">
-                            <i class="fab fa-react fa-10x"></i>
-                        </div>
-                        <div class="col-sm">
-                            <i class="fab fa-css3-alt fa-10x"></i>
-                        </div>
-                        <div class="col-sm">
-                            <img src="./images/JQuery_logo.png" height="160px" width="220px" alt="">
-                        </div>
-                        <div class="col-sm">
-                            <img src="./images/mongodb_1014592.png" height="160px" width="220px" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <br>
     </div>
 
-    <footer class="page-footer font-small special-color-dark pt-4">
-
-        <div class="container" id="contact">
-            <a href="https://www.facebook.com/profile.php?id=100009172318516" class="fb-ic mr-3 justify-content-center"
-                role="button"><i class="fab fa-lg fa-facebook-f"></i></a>
-
-            <a href="https://www.linkedin.com/in/murat-s-16aaa9175/" class="li-ic mr-3" role="button"><i
-                    class="fab fa-lg fa-linkedin-in"></i></a>
-
-
-            <a href="https://github.com/surmurat" class="git-ic mr-3" role="button"><i
-                    class="fab fa-lg fa-github"></i></a>
-        </div>
-
-        <div class="footer-copyright text-center py-3">©muratSurenler
-        </div>
-    </footer>
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"
+        integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha384-l/y5WJTphApmSlx76Ev6k4G3zxu/+19CVvn9OTKI7gs4Yu5Hm8mjpdtdr5oyhnNo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"
+        integrity="sha384-GXICBdfJ+4LCuPllm9sAGHjOYmziKnXegiMHjRoKewf0TZDP0kJN/KcJfePlHu+6" crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(function () {
+            $('body').bootstrapMaterialDesign();
+        });
+    </script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
