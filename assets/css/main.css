@@ -19,6 +19,34 @@ section #home {
     z-index: 1;
 }
 
+
+
+.wave {
+  position: relative;
+  top: 9%;
+  left: 10%;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
 .icon-title {
     color: #fe4b68;
     font-family: 'K2D', sans-serif;
