@@ -1,0 +1,134 @@
+body,
+html {
+    height: 100%;
+}
+
+.shadow-none {
+    box-shadow: none !important;
+}
+
+.nav-link {
+    font-size: 20px !important;
+    font-family: 'K2D', sans-serif;
+}
+
+section #home {
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.icon-title {
+    color: #fe4b68;
+    font-family: 'K2D', sans-serif;
+    font-size: 30px;
+}
+
+.text2 {
+    font-family: 'K2D', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.title {
+    font-size: 55px;
+    font-family: 'K2D', sans-serif;
+    font-weight: bold;
+}
+
+.title span {
+    color: #fe4b68;
+}
+
+.text {
+    line-height: 38px;
+    padding-bottom: 70px;
+    font-family: 'K2D', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.technologies {
+    list-style-type: none;
+}
+
+.technologies li {
+    float: left;
+    width: 25%;
+}
+
+.technologies li img {
+    transition: filter .5s ease-in-out;
+    transition: scale .2s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%);
+    /* FF 35+ */
+}
+
+.technologies li img:hover {
+    -webkit-filter: grayscale(0%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%);
+    /* FF 35+ */
+    transform: scale(1.2);
+}
+
+.project-overlay-container {
+    position: relative;
+    width: 100%;
+}
+
+.project-overlay-container img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.project-overlay-container .overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.project-overlay-container .overlay ul {
+    list-style-type: none;
+}
+
+.project-overlay-container .overlay ul li {
+    float: left;
+    padding: 5px;
+}
+
+.project-overlay-container .overlay ul li a{
+    font-size: 25px;
+}
+
+.project-overlay-container:hover img {
+    opacity: 0.3;
+}
+
+.project-overlay-container:hover .overlay{
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    aside {
+        height: 100%;
+    }
+}
