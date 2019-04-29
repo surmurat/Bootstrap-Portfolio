@@ -100,13 +100,9 @@ html {
     list-style-type: none;
 }
 
-.technologies li {
-    float: left;
-    width: 20%;
-    margin: 5px;
-}
 
-.technologies li img {
+
+.effect img {
     transition: filter .5s ease-in-out;
     transition: scale .2s ease-in-out;
     -webkit-filter: grayscale(100%);
@@ -115,7 +111,7 @@ html {
     /* FF 35+ */
 }
 
-.technologies li img:hover {
+.effect img:hover {
     -webkit-filter: grayscale(0%);
     /* Ch 23+, Saf 6.0+, BB 10.0+ */
     filter: grayscale(0%);
